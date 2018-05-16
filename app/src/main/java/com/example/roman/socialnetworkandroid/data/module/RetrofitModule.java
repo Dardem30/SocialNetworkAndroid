@@ -30,7 +30,7 @@ public class RetrofitModule {
                 .setLenient()
                 .create();
         return new Retrofit.Builder()
-                .baseUrl("http://10.0.2.2:8080")
+                .baseUrl("https://socialnetwork2.herokuapp.com")
                 .addConverterFactory(GsonConverterFactory.create(gson))
                 .client(okHttpClient)
                 .build();
